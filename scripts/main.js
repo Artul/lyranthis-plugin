@@ -1,4 +1,3 @@
-import {RuneRulesApp} from "./apps/RuneRules.js";
 import {RuneSystem} from "./rune-system/index.js";
 
 console.log("Lyranthis - main.js")
