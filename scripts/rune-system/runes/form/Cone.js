@@ -1,0 +1,47 @@
+export const Cone = {
+    id: "cone-form-rune",
+    label: "lyranthis.rune-system.runes.form.cone.label",
+    description: "lyranthis.rune-system.runes.form.cone.description",
+    category: "FORM",
+    complexity: "BASIC",
+    pointCost: 1,
+    arrayGroupContributions: [],
+    compatibilityTable: {
+        WRITING: {
+            PAPER: "NEUTRAL",
+            SOFTWOOD: "GOOD",
+            HARDWOOD: "NEUTRAL",
+            STONE: "POOR",
+            METAL: "MISMATCHED",
+            RAREMETAL: "POOR",
+            GEM: "NEUTRAL",
+        },
+        CARVING: {
+            PAPER: "POOR",
+            SOFTWOOD: "OPTIMAL",
+            HARDWOOD: "GOOD",
+            STONE: "NEUTRAL",
+            METAL: "GOOD",
+            RAREMETAL: "NEUTRAL",
+            GEM: "POOR",
+        },
+        ENGRAVING: {
+            PAPER: "MISMATCHED",
+            SOFTWOOD: "NEUTRAL",
+            HARDWOOD: "OPTIMAL",
+            STONE: "GOOD",
+            METAL: "OPTIMAL",
+            RAREMETAL: "GOOD",
+            GEM: "GOOD",
+        },
+        ETCHING: {
+            PAPER: "GOOD",
+            SOFTWOOD: "POOR",
+            HARDWOOD: "POOR",
+            STONE: "OPTIMAL",
+            METAL: "NEUTRAL",
+            RAREMETAL: "OPTIMAL",
+            GEM: "OPTIMAL",
+        },
+    }
+};

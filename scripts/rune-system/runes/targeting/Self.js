@@ -1,0 +1,47 @@
+export const Self = {
+    id: "self-targeting-rune",
+    label: "lyranthis.rune-system.runes.targeting.self.label",
+    description: "lyranthis.rune-system.runes.targeting.self.description",
+    category: "TARGETING",
+    complexity: "BASIC",
+    pointCost: 1,
+    arrayGroupContributions: [],
+    compatibilityTable: {
+        WRITING: {
+            PAPER: "OPTIMAL",
+            SOFTWOOD: "GOOD",
+            HARDWOOD: "NEUTRAL",
+            STONE: "POOR",
+            METAL: "MISMATCHED",
+            RAREMETAL: "NEUTRAL",
+            GEM: "MISMATCHED",
+        },
+        CARVING: {
+            PAPER: "POOR",
+            SOFTWOOD: "OPTIMAL",
+            HARDWOOD: "GOOD",
+            STONE: "GOOD",
+            METAL: "NEUTRAL",
+            RAREMETAL: "POOR",
+            GEM: "NEUTRAL",
+        },
+        ENGRAVING: {
+            PAPER: "MISMATCHED",
+            SOFTWOOD: "NEUTRAL",
+            HARDWOOD: "OPTIMAL",
+            STONE: "OPTIMAL",
+            METAL: "GOOD",
+            RAREMETAL: "GOOD",
+            GEM: "GOOD",
+        },
+        ETCHING: {
+            PAPER: "NEUTRAL",
+            SOFTWOOD: "POOR",
+            HARDWOOD: "POOR",
+            STONE: "NEUTRAL",
+            METAL: "OPTIMAL",
+            RAREMETAL: "OPTIMAL",
+            GEM: "OPTIMAL",
+        },
+    }
+};

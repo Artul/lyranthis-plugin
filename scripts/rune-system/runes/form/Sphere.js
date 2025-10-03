@@ -1,0 +1,47 @@
+export const Sphere = {
+    id: "sphere-form-rune",
+    label: "lyranthis.rune-system.runes.form.sphere.label",
+    description: "lyranthis.rune-system.runes.form.sphere.description",
+    category: "FORM",
+    complexity: "BASIC",
+    pointCost: 1,
+    arrayGroupContributions: [],
+    compatibilityTable: {
+        WRITING: {
+            PAPER: "GOOD",
+            SOFTWOOD: "NEUTRAL",
+            HARDWOOD: "POOR",
+            STONE: "NEUTRAL",
+            METAL: "POOR",
+            RAREMETAL: "NEUTRAL",
+            GEM: "MISMATCHED",
+        },
+        CARVING: {
+            PAPER: "NEUTRAL",
+            SOFTWOOD: "GOOD",
+            HARDWOOD: "GOOD",
+            STONE: "OPTIMAL",
+            METAL: "NEUTRAL",
+            RAREMETAL: "GOOD",
+            GEM: "POOR",
+        },
+        ENGRAVING: {
+            PAPER: "MISMATCHED",
+            SOFTWOOD: "OPTIMAL",
+            HARDWOOD: "OPTIMAL",
+            STONE: "GOOD",
+            METAL: "GOOD",
+            RAREMETAL: "OPTIMAL",
+            GEM: "GOOD",
+        },
+        ETCHING: {
+            PAPER: "POOR",
+            SOFTWOOD: "POOR",
+            HARDWOOD: "NEUTRAL",
+            STONE: "POOR",
+            METAL: "OPTIMAL",
+            RAREMETAL: "POOR",
+            GEM: "OPTIMAL",
+        },
+    }
+};

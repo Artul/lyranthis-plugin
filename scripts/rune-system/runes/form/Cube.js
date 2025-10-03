@@ -1,0 +1,47 @@
+export const Cube = {
+    id: "cube-form-rune",
+    label: "lyranthis.rune-system.runes.form.cube.label",
+    description: "lyranthis.rune-system.runes.form.cube.description",
+    category: "FORM",
+    complexity: "INTERMEDIATE",
+    pointCost: 2,
+    arrayGroupContributions: [],
+    compatibilityTable: {
+        WRITING: {
+            PAPER: "NEUTRAL",
+            SOFTWOOD: "POOR",
+            HARDWOOD: "NEUTRAL",
+            STONE: "GOOD",
+            METAL: "POOR",
+            RAREMETAL: "NEUTRAL",
+            GEM: "MISMATCHED",
+        },
+        CARVING: {
+            PAPER: "POOR",
+            SOFTWOOD: "NEUTRAL",
+            HARDWOOD: "GOOD",
+            STONE: "OPTIMAL",
+            METAL: "NEUTRAL",
+            RAREMETAL: "GOOD",
+            GEM: "POOR",
+        },
+        ENGRAVING: {
+            PAPER: "MISMATCHED",
+            SOFTWOOD: "GOOD",
+            HARDWOOD: "OPTIMAL",
+            STONE: "NEUTRAL",
+            METAL: "GOOD",
+            RAREMETAL: "OPTIMAL",
+            GEM: "GOOD",
+        },
+        ETCHING: {
+            PAPER: "GOOD",
+            SOFTWOOD: "OPTIMAL",
+            HARDWOOD: "POOR",
+            STONE: "POOR",
+            METAL: "OPTIMAL",
+            RAREMETAL: "POOR",
+            GEM: "OPTIMAL",
+        },
+    }
+};

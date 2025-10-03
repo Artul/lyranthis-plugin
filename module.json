@@ -1,0 +1,156 @@
+{
+  "id": "lyranthis",
+  "title": "Lyranthis",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "akazukilp",
+      "flags": {}
+    },
+    {
+      "name": "Artul",
+      "flags": {}
+    }
+  ],
+  "flags": {
+    "canUpload": true
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "packs": [
+    {
+      "name": "LyranthisItems",
+      "label": "Lyranthis - Items",
+      "path": "packs/LyranthisItems",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "LyranthisClasses",
+      "label": "Lyranthis - Classes",
+      "path": "packs/LyranthisClasses",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "LyranthisSpecies",
+      "label": "Lyranthis - Species",
+      "path": "packs/LyranthisSpecies",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "LyranthisBackgrounds",
+      "label": "Lyranthis - Backgrounds",
+      "path": "packs/LyranthisBackgrounds",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "LyranthisRules",
+      "label": "Lyranthis - Rules",
+      "path": "packs/LyranthisRules",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e",
+      "flags": {
+        "dnd5e": {
+          "display": "table-of-contentss"
+        }
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Lyranthis",
+      "sorting": "a",
+      "color": "#63a5ff",
+      "packs": [
+        "LyranthisItems",
+        "LyranthisClasses",
+        "LyranthisSpecies",
+        "LyranthisBackgrounds"
+      ],
+      "folders": [
+        {
+          "name": "Items",
+          "sorting": "m",
+          "color": "#ff0000",
+          "packs": [
+            "LyranthisItems"
+          ],
+          "folders": []
+        },
+        {
+          "name": "Classes",
+          "sorting": "m",
+          "color": "#ff0000",
+          "packs": [
+            "LyranthisClasses"
+          ],
+          "folders": []
+        },
+        {
+          "name": "Species",
+          "sorting": "m",
+          "color": "#ff0000",
+          "packs": [
+            "LyranthisSpecies"
+          ],
+          "folders": []
+        },
+        {
+          "name": "Backgrounds",
+          "sorting": "m",
+          "color": "#ff0000",
+          "packs": [
+            "LyranthisBackgrounds"
+          ],
+          "folders": []
+        }
+      ]
+    }
+  ],
+  "description": ""
+}

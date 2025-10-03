@@ -1,0 +1,302 @@
+{
+  "DND5E": {
+    "SPELLCASTING": {
+      "SLOTS": {
+        "divine1": "1st Level",
+        "divine2": "2nd Level",
+        "divine3": "3rd Level",
+        "divine4": "4th Level",
+        "divine5": "5th Level",
+        "divine6": "6th Level",
+        "divine7": "7th Level",
+        "divine8": "8th Level",
+        "divine9": "9th Level"
+      }
+    }
+  },
+  "lyranthis": {
+    "spell-progression": {
+      "divine-caster": "Divine Caster"
+    },
+    "languages": {
+      "category-title": "Lyranthis",
+      "garatisch": {
+        "title": "Garatisch",
+        "new": "New Garatisch",
+        "old": "Old Garatisch"
+      }
+    },
+    "item-properties": {
+      "oath-iron": "Oath iron"
+    },
+    "rune-system": {
+      "slot-status": {
+        "planned": "Planned",
+        "applied": "Applied"
+      },
+      "method": {
+        "writing": "Writing",
+        "carving": "Carving",
+        "engraving": "Engraving",
+        "etching": "Etching"
+      },
+      "material": {
+        "paper": "Paper",
+        "softWood": "Soft wood",
+        "hardWood": "Hard wood",
+        "stone": "Stone",
+        "metal": "Metal",
+        "rareMetal": "Rare Metal",
+        "gem": "Gem"
+      },
+      "quality": {
+        "mismatched": "Mismatched",
+        "poor": "Poor",
+        "neutral": "Neutral",
+        "good": "Good",
+        "optimal": "Optimal"
+      },
+      "complexity": {
+        "basic": "Basic",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced",
+        "master": "Master"
+      },
+      "rune-type": {
+        "targeting": "Targeting",
+        "form": "Form",
+        "effect": "Effect",
+        "trigger": "Trigger"
+      },
+      "runes": {
+        "targeting": {
+          "self": {
+            "label": "Self",
+            "description": "Directs the effect of the rune array onto the caster themselves."
+          },
+          "creature": {
+            "label": "Creature",
+            "description": "Designates a specific creature as the target of the group’s effect. Each Creature Rune included in the group allows targeting of one additional creature."
+          },
+          "point": {
+            "label": "Point",
+            "description": "Targets a specific point in range. The range is always measured from the caster’s location. If no caster is present, defaults to the rune array’s current location."
+          },
+          "chain": {
+            "label": "Chain",
+            "description": "Causes an effect to leap from one target to another. Each Chain Rune included in the group allows targeting of one additional creature beyond the first."
+          },
+          "area": {
+            "label": "Area",
+            "description": "Expands the effect to apply across an area, using the Form Rune in the group to determine the area’s shape and coverage (sphere, cone, line, cube, etc.)."
+          }
+        },
+        "form": {
+          "sphere": {
+            "label": "Sphere",
+            "description": "Shapes an effect into a sphere. The sphere’s size is determined by the Rune Array’s quality tier. Commonly used with the Area Targeting Rune to define explosions, barriers, or spherical zones of influence."
+          },
+          "cone": {
+            "label": "Cone",
+            "description": "Shapes an effect into a cone extending outward from the chosen origin point. Commonly used for blasts of energy, sprays of elements, or wave-like effects. The cone’s length and width are determined by the Rune Array’s quality tier."
+          },
+          "line": {
+            "label": "Line",
+            "description": "Shapes an effect into a straight line extending from the chosen origin point. Often used for beams, strikes, or piercing effects. The line’s length is determined by the Rune Array’s quality tier."
+          },
+          "cube": {
+            "label": "Cube",
+            "description": "Shapes an effect into a cube (or rectangular prism). Often used for barriers, cages, or large block-shaped areas of influence. The cube’s size is determined by the Rune Array’s quality tier."
+          }
+        },
+        "effect": {
+          "fire": {
+            "label": "Fire",
+            "description": "Infuses the effect with the element of fire. Fire Runes contribute damage dice to an effect or imbue it with burning/flame properties (e.g., heat, ignition). Multiple Fire Runes in the same group stack to increase dice. Fire damage is primarily destructive, but it can also serve utility purposes (melting, burning, providing light)."
+          }
+        },
+        "trigger": {}
+      },
+      "rules": {
+        "title": "Rune System Rules",
+        "introduction": {
+          "title": "Introduction",
+          "p1": "Rune Magic is an ancient craft of binding words of power into the world itself. Unlike spellcasting, which channels magic directly through will and gestures, rune magic requires the mage to carefully inscribe symbols onto a medium—parchment, stone, wood, metal, gems, or more—using specialized tools and methods. Once inscribed, a rune becomes a vessel for magic, ready to be awakened when needed.",
+          "p2": "Runes are not spells by themselves. Each rune is a word of power and only by combining them into rune arrays can a functional effect be created. These arrays can mirror familiar spells or produce new and unusual results depending on the combination of runes used.",
+          "p3": "Where traditional spellcasting is fast and flexible, rune magic is slow, deliberate, and enduring. A spell slot might conjure a flame that burns for a moment, but a properly prepared rune etched into a gem may burn for a lifetime. Rune magic allows those with time, knowledge, and skill to create enchanted objects, wards, and artifacts of great power. However, its demands of patience, rare materials, and precise craft ensure that few can master it.",
+          "p4": "Rune magic does not replace spellcasting. Instead, it exists alongside it, offering spellcasters and non-spellcasters alike the ability to craft magical effects through study, dedication, and effort. A wizard may weave runes into their staff to bolster their spells, while a fighter might wear rune-inscribed armor for protection. Entire legendary artifacts—golden bracelets with gemstones inscribed with arrays, runic blades that blaze with fire, or rings that conceal the wearer in shadow—can be forged through this art, though such works demand immense time and resources.",
+          "p5": "The power of rune arrays depends on three core factors:",
+          "li1-label": "The Rune",
+          "li1-explanation": "what magical concept is invoked",
+          "li2-label": "The Method",
+          "li2-explanation": "how it is inscribed: written, carved, engraved, etched, etc.",
+          "li3-label": "The Medium",
+          "li3-explanation": "the material that carries it: paper, stone, metal, gems, etc.",
+          "p6": "Each rune inscribed requires time, skill, and energy from its crafter. Players use a pool of Rune Points, representing the strain of shaping magic into written form, to create runes. Every rune also requires a skill check using Runic Tools to determine how well it bonds with the chosen medium. Success or failure does not mean the rune is present or absent—all runes inscribed remain—but rather how strongly the rune resonates, and thus how powerful it is in the final array.",
+          "p7": "Once a rune array is designed, it must be inscribed immediately onto its final medium. Arrays cannot be stockpiled, stored, or later transferred between objects—the act of inscription binds the magic to the specific substance and form of that item. Nonmagical sketches or drafting diagrams may be kept as references, but they hold no power. If you want the same array on another object, you must craft it anew, spending time, Rune Points, and making checks as normal. A scroll counts as its own final medium; if the array is on paper, that page is the item."
+        },
+        "fundamentals": {
+          "title": "Fundamentals",
+          "p1": "Every rune carries several properties that govern how it is used and how effective it will be when placed into a rune-array.",
+          "point-cost": {
+            "title": "Rune Point Cost",
+            "li1": "Each rune requires a number of Rune Points (RP) to inscribe.",
+            "li2": "A character has a pool of Rune Points equal to their character level, which refreshes on a long rest.",
+            "li3": "The Rune Point cost is paid when the rune is applied to a medium.",
+            "li4": "Rune Points represent the caster’s magical exertion in shaping raw magic into stable written form."
+          },
+          "complexity": {
+            "title": "Complexity Level",
+            "p1": "Each rune is assigned a Complexity Level, which determines three things:",
+            "li1-label": "Base Skill Check DC",
+            "li1-explanation": "how difficult it is to inscribe",
+            "li2-label": "Application Time",
+            "li2-explanation": "how long it takes to place the rune",
+            "li3-label": "Minimum Player Level",
+            "li3-explanation": "the earliest level a character can use that rune",
+            "table-headers": {
+              "complexity": "Complexity",
+              "base-dc": "Base DC",
+              "application-time": "Application Time",
+              "minimum-level": "Minimum Level"
+            },
+            "hours": "hours",
+            "table-rows": {
+              "basic": {
+                "label": "Basic",
+                "time": "Short"
+              },
+              "intermediate": {
+                "label": "Intermediate",
+                "time": "Medium"
+              },
+              "advanced": {
+                "label": "Advanced",
+                "time": "Long"
+              },
+              "master": {
+                "label": "Master",
+                "time": "Very Long"
+              }
+            }
+          },
+          "compatibility": {
+            "title": "Medium-Method Compatibility Matrix",
+            "p1": "Each rune can be applied to any material (medium) using any method of inscription. However, not every combination resonates equally well. Compatibility affects the skill check DC and the quality outcome of the rune.",
+            "li1-extra1": "Strong resonance, but very hard to stabilize.",
+            "li1-extra2": "DC, potential for very high quality",
+            "li2-extra1": "Good resonance, but harder to stabilize",
+            "li2-extra2": "DC, potential for higher quality",
+            "li3-extra1": "Balanced.",
+            "li3-extra2": "DC, normal quality",
+            "li4-extra1": "Weak resonance, but easier to stabilize.",
+            "li4-extra2": "DC, lower quality ceiling",
+            "li5-extra1": "Very unstable, nearly always flawed.",
+            "li5-extra2": "DC, very low quality ceiling",
+            "p2-notice": "Important",
+            "p2-text": "Lower compatibility makes the rune easier to apply but ensures weaker results. Higher compatibility makes the rune harder to apply, but allows for stronger outcomes."
+          }
+        },
+        "quality-and-arrays": {
+          "title": "Rune Quality & Rune Arrays",
+          "applying": "Applying a Rune",
+          "p1": "When you inscribe a rune, follow these steps:",
+          "dc1": "Determine DC:",
+          "dc2": "Start with the rune’s base DC (from its complexity) and adjust it based on its medium–method compatibility",
+          "inscription-pace": {
+            "title": "Choose Inscription Pace:",
+            "normal1": "Normal:",
+            "normal2": "Roll as normal.",
+            "careful1": "Careful (Double Time):",
+            "careful2": "Spend twice the application time. You gain Advantage on the check, and the rune cannot drop below the compatibility’s normal quality (to a maximum of Good)."
+          },
+          "check": {
+            "title": "Make the Skill Check:",
+            "success1": "On Success:",
+            "success2": "The rune is inscribed at the quality of its medium–method compatibility (Optimal, Good, Neutral, Poor, Mismatched).",
+            "fail1": "On Failure:",
+            "fail2": "The rune is inscribed, but its quality drops one step below the compatibility’s normal value."
+          },
+          "combining": "Combining into a Rune Array",
+          "p2": "A rune array consists of multiple runes inscribed together for a unified effect.",
+          "li1": "Assign each rune a Quality Value based on its final result:",
+          "table-headers": {
+            "quality": "Quality Tier",
+            "value": "Value",
+            "dc": "DC",
+            "dice": "Dice used",
+            "duration": "Duration",
+            "range": "Range",
+            "aoe": "Area of Effect"
+          },
+          "li2": "Add together the values of all runes in the array and divide by the number of runes.",
+          "li3": "Round normally (.5 and higher rounds up).",
+          "li4": "The result determines the final array quality.",
+          "effects": "Array Quality Effects",
+          "p3": "The final quality of a rune array determines how potent its magical effects are. Not all effects use all parameters (for example, an instant heal would not use duration).",
+          "ft": "ft.",
+          "radius": "radius sphere",
+          "line": "line",
+          "cone": "cone",
+          "cube": "cube",
+          "li5": "If the array produces a saving throw effect, this is the DC.",
+          "li6": "If the array deals damage or healing, this is the die size used.",
+          "li7": "If the array creates a sustained effect, this is how long it lasts without reactivation."
+        },
+        "designing-array": {
+          "title": "Designing a Rune Array",
+          "p1": "Creating a rune-array begins with clearly defining the effect you want to produce. This process moves from intended outcome → groups of runes → final structure.",
+          "step1": {
+            "title": "Step: Define the Intended Outcome",
+            "p1": "Before selecting runes, clearly define what the Rune Array should accomplish in terms of outcome, not flavor. Examples:",
+            "example1": "“A projectile that explodes.”",
+            "example2": "“A protective barrier.”",
+            "example3": "“A healing pulse.”",
+            "p2": "This ensures the groupings of runes are built around functional results."
+          },
+          "step2": {
+            "title": "Step: Break the Effect into Groups",
+            "p1": "Split the desired outcome into Effect Groups. Each group represents one distinct “action” or “phase” of the array. Groups are separated by Trigger Runes, which mark where secondary effects begin.",
+            "example1": "“The projectile flies to the target point.”",
+            "example2": "“The projectile explodes when it reaches the target point”"
+          },
+          "step3": {
+            "title": "Step: Assign Components to Each Group",
+            "p1": "Each group is made up of the following required or optional components:",
+            "targeting-rune": {
+              "text": "Defines who or what the effect is applied to. Most groups may only contain one Targeting Rune. Exceptions: Creature Rune and Chain Rune, which may be stacked to increase the number of targets.",
+              "self": "Always the caster.",
+              "creature": "One chosen creature per rune in the group.",
+              "point": "A chosen point in range, always measured from the caster’s location. If no caster exists, defaults to the array’s current location.",
+              "chain": "Jumps from one valid target to another; each rune allows one additional target.",
+              "area": "Not a standalone target; instead, it applies the Form Rune to determine affected targets.",
+              "area-li1": "May only be combined with Self or Point Targeting Runes.",
+              "area-li2": "If used with no explicit Targeting Rune, defaults to:",
+              "area-li2a": "The last known location defined by a previous group.",
+              "area-li2b": "Or the caster’s location if this is the first group.",
+              "area-li3": "Always requires a Form Rune in the group."
+            },
+            "required": "required",
+            "partial-optional": "optional but required for Area",
+            "optional": "optional",
+            "rune": "Rune",
+            "p2": "Defines the shape or structure of the effect (sphere, cone, line, cube, wall, etc.).",
+            "p3": "Describes how the effect travels or relocates (move, spread, anchor, pull, sustain, etc.).",
+            "p4": "Define the magical energy, element, or outcome (fire, lightning, healing, illusion, force, etc.).",
+            "li1": "Multiple Effect Runes stack (e.g., adding more dice, combining damage types).",
+            "li2": "Each Effect Rune contributes dice to the group’s outcome independently.",
+            "p5": "Marks the beginning of a secondary effect. All runes after the Trigger up to the next Trigger (or end of array) belong to a new group."
+          },
+          "step4": {
+            "title": "Step: Finalize the Array",
+            "li1": "Each group must contain at least:",
+            "li1a": "One Targeting Rune (except Area-only fallback cases as defined above).",
+            "li1b": "At least one Effect Rune.",
+            "li2": "The GM and player should confirm the array sequence makes sense in the intended outcome.",
+            "li3": "Dice pools, DCs, and ranges are determined by the group’s quality tier (per the Quality rules)."
+          }
+        }
+      }
+    }
+  }
+}
