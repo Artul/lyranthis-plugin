@@ -70,27 +70,4 @@ Hooks.on("init", function() {
 });
 Hooks.on("ready", function() {
     console.log("Lyranthis - ready - main.js");
-    game.runeRules = new RuneRulesApp();
-    //game.runeRules.render(true);
 });
-/*Hooks.on("renderCompendiumDirectory", (app, html, data) => {
-    console.log("Lyranthis - renderCompendiumDirectory - main.js");
-    const container = html.querySelector?.(".directory-header")
-        || document.querySelector(".compendium-directory .directory-header");
-    if (!container) return;
-
-    // Prüfen ob Button schon da ist
-    if (container.querySelector(".rune-rules-button")) return;
-
-    // Button erstellen
-    const btn = document.createElement("button");
-    btn.className = "rune-rules-button";
-    btn.innerHTML = `<i class="fas fa-book"></i> ${game.i18n.localize("yourmodule.rules.title")}`;
-
-    // Klick -> öffnet deine App
-    btn.addEventListener("click", () => new RuneRulesApp().render(true));
-
-    // Button einfügen
-    container.appendChild(btn);
-    console.log("button added");
-});*/
