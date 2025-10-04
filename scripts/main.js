@@ -39,7 +39,6 @@ Hooks.on("init", function() {
                 label: game.i18n.localize("lyranthis.spell-progression.divine-caster"),
             }
         },
-        "#key": "spell",
     };
 
     CONFIG.DND5E.languages.lyranthis = {
@@ -53,6 +52,9 @@ Hooks.on("init", function() {
                     oldgaratisch: game.i18n.localize("lyranthis.languages.garatisch.old"),
                 },
             },
+            sylthari: {
+                label: game.i18n.localize("lyranthis.languages.sylthari.title"),
+            }
         },
     }
     CONFIG.DND5E.itemProperties.oathiron = {

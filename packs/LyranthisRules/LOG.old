@@ -1,3 +1,23 @@
-2025/10/03-22:51:07.003 5824 Recovering log #17
-2025/10/03-22:51:07.013 5824 Delete type=0 #17
-2025/10/03-22:51:07.013 5824 Delete type=3 #16
+2025/10/04-18:50:05.025 9c0 Recovering log #26
+2025/10/04-18:50:05.031 9c0 Delete type=0 #26
+2025/10/04-18:50:05.031 9c0 Delete type=3 #25
+2025/10/04-19:24:39.679 6d30 Level-0 table #30: started
+2025/10/04-19:24:39.679 6d30 Level-0 table #30: 0 bytes OK
+2025/10/04-19:24:39.681 6d30 Delete type=0 #28
+2025/10/04-19:24:39.693 6d30 Manual compaction at level-0 from '!journal!BTJLf4enc483zV9r' @ 72057594037927935 : 1 .. '!journal.pages!BTJLf4enc483zV9r.iThokoQT7FKfvqmo' @ 0 : 0; will stop at '!journal.pages!BTJLf4enc483zV9r.iThokoQT7FKfvqmo' @ 10 : 1
+2025/10/04-19:24:39.693 6d30 Compacting 3@0 + 0@1 files
+2025/10/04-19:24:39.696 6d30 Generated table #31@0: 4 keys, 6554 bytes
+2025/10/04-19:24:39.696 6d30 Compacted 3@0 + 0@1 files => 6554 bytes
+2025/10/04-19:24:39.699 6d30 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/10/04-19:24:39.699 6d30 Delete type=2 #11
+2025/10/04-19:24:39.699 6d30 Delete type=2 #14
+2025/10/04-19:24:39.699 6d30 Delete type=2 #21
+2025/10/04-19:24:39.711 6d30 Manual compaction at level-0 from '!journal.pages!BTJLf4enc483zV9r.iThokoQT7FKfvqmo' @ 10 : 1 .. '!journal.pages!BTJLf4enc483zV9r.iThokoQT7FKfvqmo' @ 0 : 0; will stop at (end)
+2025/10/04-19:24:39.737 6d30 Manual compaction at level-1 from '!journal!BTJLf4enc483zV9r' @ 72057594037927935 : 1 .. '!journal.pages!BTJLf4enc483zV9r.iThokoQT7FKfvqmo' @ 0 : 0; will stop at '!journal.pages!BTJLf4enc483zV9r.iThokoQT7FKfvqmo' @ 62 : 1
+2025/10/04-19:24:39.737 6d30 Compacting 1@1 + 1@2 files
+2025/10/04-19:24:39.740 6d30 Generated table #32@1: 4 keys, 6554 bytes
+2025/10/04-19:24:39.740 6d30 Compacted 1@1 + 1@2 files => 6554 bytes
+2025/10/04-19:24:39.743 6d30 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/10/04-19:24:39.743 6d30 Delete type=2 #5
+2025/10/04-19:24:39.743 6d30 Delete type=2 #31
+2025/10/04-19:24:39.743 6d30 Manual compaction at level-1 from '!journal.pages!BTJLf4enc483zV9r.iThokoQT7FKfvqmo' @ 62 : 1 .. '!journal.pages!BTJLf4enc483zV9r.iThokoQT7FKfvqmo' @ 0 : 0; will stop at (end)

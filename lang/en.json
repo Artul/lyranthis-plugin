@@ -2,6 +2,7 @@
   "DND5E": {
     "SPELLCASTING": {
       "SLOTS": {
+        "divine0": "Cantrips",
         "divine1": "1st Level",
         "divine2": "2nd Level",
         "divine3": "3rd Level",
@@ -24,6 +25,9 @@
         "title": "Garatisch",
         "new": "New Garatisch",
         "old": "Old Garatisch"
+      },
+      "sylthari": {
+        "title": "Sylthari"
       }
     },
     "item-properties": {

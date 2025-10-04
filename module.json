@@ -89,16 +89,22 @@
       "label": "Lyranthis - Rules",
       "path": "packs/LyranthisRules",
       "type": "JournalEntry",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "LyranthisSpells",
+      "label": "Lyranthis - Spells",
+      "path": "packs/LyranthisSpells",
+      "type": "Item",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       },
-      "system": "dnd5e",
-      "flags": {
-        "dnd5e": {
-          "display": "table-of-contentss"
-        }
-      }
+      "system": "dnd5e"
     }
   ],
   "packFolders": [
@@ -108,9 +114,11 @@
       "color": "#63a5ff",
       "packs": [
         "LyranthisItems",
+        "LyranthisSpells",
         "LyranthisClasses",
         "LyranthisSpecies",
-        "LyranthisBackgrounds"
+        "LyranthisBackgrounds",
+        "LyranthisRules"
       ],
       "folders": [
         {
@@ -119,6 +127,15 @@
           "color": "#ff0000",
           "packs": [
             "LyranthisItems"
+          ],
+          "folders": []
+        },
+        {
+          "name": "Spells",
+          "sorting": "m",
+          "color": "#ff0000",
+          "packs": [
+            "LyranthisSpells"
           ],
           "folders": []
         },
@@ -146,6 +163,15 @@
           "color": "#ff0000",
           "packs": [
             "LyranthisBackgrounds"
+          ],
+          "folders": []
+        },
+        {
+          "name": "Rules",
+          "sorting": "m",
+          "color": "#ff0000",
+          "packs": [
+            "LyranthisRules"
           ],
           "folders": []
         }
