@@ -1,11 +1,9 @@
 import {RuneSystem} from "./rune-system/index.js";
-
-console.log("Lyranthis - main.js")
+import {Localize} from "./utils/Localize.js";
 
 Hooks.on("init", function() {
-    console.log("Lyranthis - init - main.js");
     CONFIG.DND5E.spellcasting.divine = {
-        label: game.i18n.localize("lyranthis.spell-progression.divine-caster"),
+        label: "lyranthis.spell-progression.divine-caster",
         type: "multi",
         cantrips: true,
         prepares: false,
@@ -42,33 +40,34 @@ Hooks.on("init", function() {
     };
 
     CONFIG.DND5E.languages.lyranthis = {
-        label: game.i18n.localize("lyranthis.languages.category-title"),
+        label: "lyranthis.languages.category-title",
         selectable: false,
         children: {
             garatisch: {
-                label: game.i18n.localize("lyranthis.languages.garatisch.title"),
+                label: "lyranthis.languages.garatisch.title",
                 children: {
                     newgaratisch: game.i18n.localize("lyranthis.languages.garatisch.new"),
                     oldgaratisch: game.i18n.localize("lyranthis.languages.garatisch.old"),
                 },
             },
             sylthari: {
-                label: game.i18n.localize("lyranthis.languages.sylthari.title"),
+                label: "lyranthis.languages.sylthari.title",
             }
         },
     }
     CONFIG.DND5E.itemProperties.oathiron = {
-        label: game.i18n.localize("lyranthis.item-properties.oath-iron"),
+        label: "lyranthis.item-properties.oath-iron",
         isPhysical: true
     };
     CONFIG.DND5E.validProperties.weapon.add("oathiron");
     delete CONFIG.DND5E.currencies.ep;
-    console.log(CONFIG.DND5E);
     CONFIG.LYRANTHIS = {
         runeSystem: RuneSystem,
     };
-    console.log(CONFIG.LYRANTHIS);
+});
+Hooks.once("i18nInit", () => {
+    Localize(CONFIG.LYRANTHIS);
+    Localize(CONFIG.DND5E.languages.lyranthis);
 });
 Hooks.on("ready", function() {
-    console.log("Lyranthis - ready - main.js");
 });

@@ -1,23 +1,5 @@
-2025/10/04-18:50:05.007 6d4c Recovering log #67
-2025/10/04-18:50:05.014 6d4c Delete type=0 #67
-2025/10/04-18:50:05.014 6d4c Delete type=3 #66
-2025/10/04-19:24:39.582 6d30 Level-0 table #71: started
-2025/10/04-19:24:39.588 6d30 Level-0 table #71: 15035 bytes OK
-2025/10/04-19:24:39.591 6d30 Delete type=0 #69
-2025/10/04-19:24:39.598 6d30 Manual compaction at level-0 from '!folders!1X2eV2Pm3ipHThQ5' @ 72057594037927935 : 1 .. '!items.effects!Jt8aG0qhLvRQkBaq.oADUz3oLViTW1GC0' @ 0 : 0; will stop at '!items!Y922NSR7ckcQIGo4' @ 200 : 1
-2025/10/04-19:24:39.598 6d30 Compacting 3@0 + 0@1 files
-2025/10/04-19:24:39.601 6d30 Generated table #72@0: 7 keys, 9863 bytes
-2025/10/04-19:24:39.601 6d30 Compacted 3@0 + 0@1 files => 9863 bytes
-2025/10/04-19:24:39.602 6d30 compacted to: files[ 0 1 1 0 0 0 0 ]
-2025/10/04-19:24:39.603 6d30 Delete type=2 #59
-2025/10/04-19:24:39.603 6d30 Delete type=2 #62
-2025/10/04-19:24:39.603 6d30 Delete type=2 #71
-2025/10/04-19:24:39.614 6d30 Manual compaction at level-0 from '!items!Y922NSR7ckcQIGo4' @ 200 : 1 .. '!items.effects!Jt8aG0qhLvRQkBaq.oADUz3oLViTW1GC0' @ 0 : 0; will stop at (end)
-2025/10/04-19:24:39.618 6d30 Manual compaction at level-1 from '!folders!1X2eV2Pm3ipHThQ5' @ 72057594037927935 : 1 .. '!items.effects!Jt8aG0qhLvRQkBaq.oADUz3oLViTW1GC0' @ 0 : 0; will stop at '!items.effects!3VysFjuWFpfXvJlK.yRhlAXm8FIZTdv1H' @ 157 : 1
-2025/10/04-19:24:39.618 6d30 Compacting 1@1 + 1@2 files
-2025/10/04-19:24:39.622 6d30 Generated table #73@1: 14 keys, 15004 bytes
-2025/10/04-19:24:39.622 6d30 Compacted 1@1 + 1@2 files => 15004 bytes
-2025/10/04-19:24:39.624 6d30 compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/10/04-19:24:39.624 6d30 Delete type=2 #47
-2025/10/04-19:24:39.624 6d30 Delete type=2 #72
-2025/10/04-19:24:39.631 6d30 Manual compaction at level-1 from '!items.effects!3VysFjuWFpfXvJlK.yRhlAXm8FIZTdv1H' @ 157 : 1 .. '!items.effects!Jt8aG0qhLvRQkBaq.oADUz3oLViTW1GC0' @ 0 : 0; will stop at (end)
+2025/10/05-14:19:57.063 603c Recovering log #75
+2025/10/05-14:19:57.063 603c Level-0 table #77: started
+2025/10/05-14:19:57.066 603c Level-0 table #77: 167786 bytes OK
+2025/10/05-14:19:57.072 603c Delete type=0 #75
+2025/10/05-14:19:57.072 603c Delete type=3 #74

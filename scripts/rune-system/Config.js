@@ -1,7 +1,7 @@
 export const Config = {
     SlotStatus: {
-        PLANNED: "lyranthis.rune-system.slotStatus.planned",
-        APPLIED: "lyranthis.rune-system.slotStatus.applied",
+        PLANNED: "lyranthis.rune-system.slot-status.planned",
+        APPLIED: "lyranthis.rune-system.slot-status.applied",
     },
 
     Methods:  {
