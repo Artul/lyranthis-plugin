@@ -1,6 +1,22 @@
 import {RuneSystem} from "./rune-system/index.js";
 import {Localize} from "./utils/Localize.js";
 
+Hooks.once("setup", () => {
+    for (let index = 0; index < 10; index++) {
+        CONFIG.statusEffects.push({
+            id: `number-${index}`,
+            name: `${index}`,
+            img: `modules/lyranthis/icons/status-effects/dummies/numbers/Number${index}.svg`,
+        });
+    }
+    ["Blue", "Cyan", "Green", "Red", "Violet", "White", "Yellow"].forEach((color) => {
+        CONFIG.statusEffects.push({
+            id: `circle-${color}`,
+            name: `${color} Circle`,
+            img: `modules/lyranthis/icons/status-effects/dummies/circles/Circle${color}.svg`,
+        });
+    });
+});
 Hooks.on("init", function() {
     CONFIG.DND5E.spellcasting.divine = {
         label: "lyranthis.spell-progression.divine-caster",
