@@ -100,6 +100,17 @@
       "label": "Lyranthis - Spells",
       "path": "packs/LyranthisSpells",
       "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "LyranthisFeats",
+      "label": "Lyranthis - Feats",
+      "path": "packs/LyranthisFeats",
+      "type": "Item",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
@@ -118,7 +129,8 @@
         "LyranthisClasses",
         "LyranthisSpecies",
         "LyranthisBackgrounds",
-        "LyranthisRules"
+        "LyranthisRules",
+        "LyranthisFeats"
       ],
       "folders": [
         {
@@ -172,6 +184,15 @@
           "color": "#ff0000",
           "packs": [
             "LyranthisRules"
+          ],
+          "folders": []
+        },
+        {
+          "name": "Feats",
+          "sorting": "m",
+          "color": "#ff0000",
+          "packs": [
+            "LyranthisFeats"
           ],
           "folders": []
         }
