@@ -1,3 +1,5 @@
-2025/10/25-13:37:32.704 79c0 Recovering log #19
-2025/10/25-13:37:32.709 79c0 Delete type=0 #19
-2025/10/25-13:37:32.709 79c0 Delete type=3 #18
+2025/11/20-17:26:25.620 6fcc Recovering log #21
+2025/11/20-17:26:25.620 6fcc Level-0 table #23: started
+2025/11/20-17:26:25.622 6fcc Level-0 table #23: 33927 bytes OK
+2025/11/20-17:26:25.628 6fcc Delete type=0 #21
+2025/11/20-17:26:25.628 6fcc Delete type=3 #20
