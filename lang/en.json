@@ -3,21 +3,27 @@
     "SPELLCASTING": {
       "SLOTS": {
         "divine0": "Cantrips",
-        "divine1": "1st Level",
-        "divine2": "2nd Level",
-        "divine3": "3rd Level",
-        "divine4": "4th Level",
-        "divine5": "5th Level",
-        "divine6": "6th Level",
-        "divine7": "7th Level",
-        "divine8": "8th Level",
-        "divine9": "9th Level"
+        "divine1": "1st Level Divine",
+        "divine2": "2nd Level Divine",
+        "divine3": "3rd Level Divine",
+        "divine4": "4th Level Divine",
+        "divine5": "5th Level Divine",
+        "divine6": "6th Level Divine",
+        "divine7": "7th Level Divine",
+        "divine8": "8th Level Divine",
+        "divine9": "9th Level Divine"
+      },
+      "METHODS": {
+        "Seraph": {
+          "abbr": "Seraph"
+        }
       }
     }
   },
   "lyranthis": {
     "spell-progression": {
-      "divine-caster": "Divine Caster"
+      "divine-caster": "Divine Caster",
+      "seraph": "Seraph"
     },
     "languages": {
       "category-title": "Lyranthis",
