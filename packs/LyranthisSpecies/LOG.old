@@ -1,5 +1,5 @@
-2025/12/18-16:24:51.149 3fb4 Recovering log #107
-2025/12/18-16:24:51.149 3fb4 Level-0 table #109: started
-2025/12/18-16:24:51.152 3fb4 Level-0 table #109: 25709 bytes OK
-2025/12/18-16:24:51.161 3fb4 Delete type=0 #107
-2025/12/18-16:24:51.161 3fb4 Delete type=3 #106
+2025/12/21-09:32:04.589 2ee4 Recovering log #110
+2025/12/21-09:32:04.590 2ee4 Level-0 table #112: started
+2025/12/21-09:32:04.592 2ee4 Level-0 table #112: 49461 bytes OK
+2025/12/21-09:32:04.598 2ee4 Delete type=0 #110
+2025/12/21-09:32:04.598 2ee4 Delete type=3 #108
