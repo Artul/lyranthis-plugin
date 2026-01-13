@@ -1,5 +1,5 @@
-2026/01/11-16:17:13.396 db0 Recovering log #128
-2026/01/11-16:17:13.398 db0 Level-0 table #131: started
-2026/01/11-16:17:13.401 db0 Level-0 table #131: 232126 bytes OK
-2026/01/11-16:17:13.407 db0 Delete type=0 #128
-2026/01/11-16:17:13.408 db0 Delete type=3 #126
+2026/01/11-17:18:31.904 8a78 Recovering log #132
+2026/01/11-17:18:31.904 8a78 Level-0 table #134: started
+2026/01/11-17:18:31.906 8a78 Level-0 table #134: 6823 bytes OK
+2026/01/11-17:18:31.912 8a78 Delete type=0 #132
+2026/01/11-17:18:31.914 8a78 Delete type=3 #130
