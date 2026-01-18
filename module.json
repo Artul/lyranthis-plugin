@@ -111,6 +111,17 @@
       "label": "Lyranthis - Feats",
       "path": "packs/LyranthisFeats",
       "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "LyranthisActors",
+      "label": "Lyranthis - Actors",
+      "path": "packs/LyranthisActors",
+      "type": "Actor",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
@@ -130,7 +141,8 @@
         "LyranthisSpecies",
         "LyranthisBackgrounds",
         "LyranthisRules",
-        "LyranthisFeats"
+        "LyranthisFeats",
+        "LyranthisActors"
       ],
       "folders": [
         {
@@ -193,6 +205,15 @@
           "color": "#ff0000",
           "packs": [
             "LyranthisFeats"
+          ],
+          "folders": []
+        },
+        {
+          "name": "Actors",
+          "sorting": "m",
+          "color": "#ff0000",
+          "packs": [
+            "LyranthisActors"
           ],
           "folders": []
         }
