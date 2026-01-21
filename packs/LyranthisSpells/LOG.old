@@ -1,3 +1,5 @@
-2026/01/18-21:51:21.331 1a7c Recovering log #76
-2026/01/18-21:51:21.337 1a7c Delete type=0 #76
-2026/01/18-21:51:21.337 1a7c Delete type=3 #75
+2026/01/21-12:59:03.371 1fcc Recovering log #81
+2026/01/21-12:59:03.371 1fcc Level-0 table #83: started
+2026/01/21-12:59:03.373 1fcc Level-0 table #83: 12503 bytes OK
+2026/01/21-12:59:03.379 1fcc Delete type=0 #81
+2026/01/21-12:59:03.379 1fcc Delete type=3 #79
