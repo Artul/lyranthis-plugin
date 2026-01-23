@@ -1,5 +1,5 @@
 <svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
-    <text dx="256" dy="256" fill="white" font-size="700" text-anchor="middle" alignment-baseline="central">
+    <text dx="256" dy="256" fill="white" font-size="700" text-anchor="middle" dominant-baseline="central">
         4
     </text>
 </svg>
