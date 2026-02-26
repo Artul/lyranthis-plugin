@@ -16,6 +16,9 @@
       "METHODS": {
         "Seraph": {
           "abbr": "Seraph"
+        },
+        "spirit": {
+          "abbr": "Spirit"
         }
       }
     }
@@ -23,7 +26,8 @@
   "lyranthis": {
     "spell-progression": {
       "divine-caster": "Divine Caster",
-      "seraph": "Seraph"
+      "seraph": "Seraph",
+      "spirit": "Spirit"
     },
     "languages": {
       "category-title": "Lyranthis",
