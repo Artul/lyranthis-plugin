@@ -1,3 +1,5 @@
-2026/02/26-23:48:05.945 4bb4 Recovering log #174
-2026/02/26-23:48:05.953 4bb4 Delete type=0 #174
-2026/02/26-23:48:05.953 4bb4 Delete type=3 #173
+2026/03/02-14:43:33.270 3fac Recovering log #185
+2026/03/02-14:43:33.271 3fac Level-0 table #187: started
+2026/03/02-14:43:33.273 3fac Level-0 table #187: 106602 bytes OK
+2026/03/02-14:43:33.280 3fac Delete type=0 #185
+2026/03/02-14:43:33.280 3fac Delete type=3 #184
