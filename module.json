@@ -42,7 +42,7 @@
   "packs": [
     {
       "name": "LyranthisItems",
-      "label": "Lyranthis - Items",
+      "label": "Items",
       "path": "packs/LyranthisItems",
       "type": "Item",
       "system": "dnd5e",
@@ -53,7 +53,7 @@
     },
     {
       "name": "LyranthisClasses",
-      "label": "Lyranthis - Classes",
+      "label": "Classes",
       "path": "packs/LyranthisClasses",
       "type": "Item",
       "system": "dnd5e",
@@ -64,7 +64,7 @@
     },
     {
       "name": "LyranthisSpecies",
-      "label": "Lyranthis - Species",
+      "label": "Species",
       "path": "packs/LyranthisSpecies",
       "type": "Item",
       "system": "dnd5e",
@@ -75,7 +75,7 @@
     },
     {
       "name": "LyranthisBackgrounds",
-      "label": "Lyranthis - Backgrounds",
+      "label": "Backgrounds",
       "path": "packs/LyranthisBackgrounds",
       "type": "Item",
       "system": "dnd5e",
@@ -86,7 +86,7 @@
     },
     {
       "name": "LyranthisRules",
-      "label": "Lyranthis - Rules",
+      "label": "Rules",
       "path": "packs/LyranthisRules",
       "type": "JournalEntry",
       "system": "dnd5e",
@@ -97,7 +97,7 @@
     },
     {
       "name": "LyranthisSpells",
-      "label": "Lyranthis - Spells",
+      "label": "Spells",
       "path": "packs/LyranthisSpells",
       "type": "Item",
       "system": "dnd5e",
@@ -108,7 +108,7 @@
     },
     {
       "name": "LyranthisFeats",
-      "label": "Lyranthis - Feats",
+      "label": "Feats",
       "path": "packs/LyranthisFeats",
       "type": "Item",
       "system": "dnd5e",
@@ -119,14 +119,14 @@
     },
     {
       "name": "LyranthisActors",
-      "label": "Lyranthis - Actors",
+      "label": "Actors",
       "path": "packs/LyranthisActors",
       "type": "Actor",
+      "system": "dnd5e",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "system": "dnd5e"
+      }
     }
   ],
   "packFolders": [
