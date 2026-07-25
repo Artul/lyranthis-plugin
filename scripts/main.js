@@ -1,4 +1,3 @@
-import {RuneSystem} from "./rune-system/index.js";
 import {Localize} from "./utils/Localize.js";
 
 Hooks.once("setup", () => {
@@ -119,13 +118,15 @@ Hooks.on("init", function() {
     };
     CONFIG.DND5E.validProperties.weapon.add("oathiron");
     delete CONFIG.DND5E.currencies.ep;
-    CONFIG.LYRANTHIS = {
-        runeSystem: RuneSystem,
-    };
 });
 Hooks.once("i18nInit", () => {
-    Localize(CONFIG.LYRANTHIS);
     Localize(CONFIG.DND5E.languages.lyranthis);
 });
-Hooks.on("ready", function() {
+/*Hooks.on("ready", function() {
 });
+Hooks.on("dnd5e.preUseActivity", function (activity, usageConfig, dialogConfig, messageConfig) {
+    console.log("activity", activity);
+    console.log("usageConfig", usageConfig);
+    console.log("dialogConfig", dialogConfig);
+    console.log("messageConfig", messageConfig);
+})*/
