@@ -41,7 +41,9 @@
       }
     },
     "item-properties": {
-      "oath-iron": "Oath iron"
+      "oath-iron": "Oath iron",
+      "twin-weapons": "Twin",
+      "parry-weapon": "Parry"
     }
   }
 }

@@ -116,7 +116,22 @@ Hooks.on("init", function() {
         label: "lyranthis.item-properties.oath-iron",
         isPhysical: true
     };
+    CONFIG.DND5E.itemProperties.twinweapons = {
+        label: "lyranthis.item-properties.twin-weapons",
+        isPhysical: true
+    };
+    CONFIG.DND5E.itemProperties.parryweapon = {
+        label: "lyranthis.item-properties.parry-weapon",
+        isPhysical: true
+    };
     CONFIG.DND5E.validProperties.weapon.add("oathiron");
+    CONFIG.DND5E.validProperties.weapon.add("twinweapons");
+    CONFIG.DND5E.validProperties.weapon.add("parryweapon");
+
+    CONFIG.DND5E.weaponIds.tonfa = "Compendium.lyranthis.LyranthisItems.Item.j2SEt0mgFNN7JvcG";
+    CONFIG.DND5E.weaponIds.kusarigama = "Compendium.lyranthis.LyranthisItems.Item.lrFmQQcgDhnTbuqI";
+    CONFIG.DND5E.weaponIds.yoyo = "Compendium.lyranthis.LyranthisItems.Item.AglB4pvkEkhBd8LX";
+    console.log(CONFIG.DND5E);
     delete CONFIG.DND5E.currencies.ep;
 });
 Hooks.once("i18nInit", () => {
