@@ -1,147 +1,35 @@
 import {Localize} from "./utils/Localize.js";
+import {languages} from "./languages.js";
+import {weapons} from "./weapons.js";
+import {weaponProperties} from "./weapon-properties/index.js";
+import {spellcasting} from "./spellcasting/index.js";
+import {initStatusEffects} from "./status-effects/index.js";
+
 
 Hooks.once("setup", () => {
-    for (let index = 0; index < 10; index++) {
-        CONFIG.statusEffects.push({
-            id: `number-${index}`,
-            name: `${index}`,
-            img: `modules/lyranthis/icons/status-effects/dummies/numbers/Number${index}.svg`,
-        });
-    }
-    ["Blue", "Cyan", "Green", "Red", "Violet", "White", "Yellow"].forEach((color) => {
-        CONFIG.statusEffects.push({
-            id: `circle-${color}`,
-            name: `${color} Circle`,
-            img: `modules/lyranthis/icons/status-effects/dummies/circles/Circle${color}.svg`,
-        });
-    });
+    initStatusEffects();
 });
 Hooks.on("init", function() {
-    CONFIG.DND5E.spellcasting.spirit = {
-        label: "lyranthis.spell-progression.spirit",
-        type: "single",
-        cantrips: false,
-        prepares: true,
-        order: -50,
-        img: "icons/magic/unholy/silhouette-robe-evil-power.webp",
-        table: {
-            3: { slots: 1, level: 1, },
-        },
-        progression: {
-            spirit: {
-                divisor: 1,
-                label: game.i18n.localize("lyranthis.spell-progression.spirit"),
-                roundUp: false,
-            }
-        }
-    };
-    CONFIG.DND5E.spellcasting.seraph = {
-        label: "lyranthis.spell-progression.seraph",
-        type: "single",
-        cantrips: true,
-        prepares: true,
-        order: -50,
-        img: "icons/magic/unholy/silhouette-robe-evil-power.webp",
-        table: {
-            1: { slots: 3, level: 1, },
-            3: { slots: 3, level: 2, },
-            5: { slots: 4, level: 3, },
-            7: { slots: 4, level: 4, },
-            9: { slots: 4, level: 5, },
-            11: { slots: 5, level: 5, },
-            17: { slots: 6, level: 5, },
-        },
-        progression: {
-            seraph: {
-                divisor: 1,
-                label: game.i18n.localize("lyranthis.spell-progression.seraph"),
-                roundUp: false,
-            }
-        }
-    };
-    CONFIG.DND5E.spellcasting.divine = {
-        label: "lyranthis.spell-progression.divine-caster",
-        type: "multi",
-        cantrips: true,
-        prepares: false,
-        order: -40,
-        img: "systems/dnd5e/icons/spell-tiers/{id}.webp",
-        table: [
-            [],
-            [],
-            [1],
-            [1],
-            [1, 1],
-            [1, 1],
-            [1, 1, 1],
-            [1, 1, 1],
-            [1, 1, 1, 1],
-            [1, 1, 1, 1],
-            [2, 1, 1, 1, 1],
-            [2, 1, 1, 1, 1],
-            [2, 2, 1, 1, 1, 1],
-            [2, 2, 1, 1, 1, 1],
-            [2, 2, 2, 1, 1, 1, 1],
-            [2, 2, 2, 1, 1, 1, 1],
-            [2, 2, 2, 2, 1, 1, 1, 1],
-            [2, 2, 2, 2, 1, 1, 1, 1],
-            [2, 2, 2, 2, 2, 1, 1, 1, 1],
-            [2, 2, 2, 2, 2, 1, 1, 1, 1],
-        ],
-        progression: {
-            divine: {
-                divisor: 1,
-                label: game.i18n.localize("lyranthis.spell-progression.divine-caster"),
-            }
-        },
-    };
+    spellcasting();
+    languages();
+    weaponProperties();
+    weapons();
 
-    CONFIG.DND5E.languages.lyranthis = {
-        label: "lyranthis.languages.category-title",
-        selectable: false,
-        children: {
-            garatisch: {
-                label: "lyranthis.languages.garatisch.title",
-                children: {
-                    newgaratisch: game.i18n.localize("lyranthis.languages.garatisch.new"),
-                    oldgaratisch: game.i18n.localize("lyranthis.languages.garatisch.old"),
-                },
-            },
-            sylthari: {
-                label: "lyranthis.languages.sylthari.title",
-            }
-        },
-    }
-    CONFIG.DND5E.itemProperties.oathiron = {
-        label: "lyranthis.item-properties.oath-iron",
-        isPhysical: true
-    };
-    CONFIG.DND5E.itemProperties.twinweapons = {
-        label: "lyranthis.item-properties.twin-weapons",
-        isPhysical: true
-    };
-    CONFIG.DND5E.itemProperties.parryweapon = {
-        label: "lyranthis.item-properties.parry-weapon",
-        isPhysical: true
-    };
-    CONFIG.DND5E.validProperties.weapon.add("oathiron");
-    CONFIG.DND5E.validProperties.weapon.add("twinweapons");
-    CONFIG.DND5E.validProperties.weapon.add("parryweapon");
-
-    CONFIG.DND5E.weaponIds.tonfa = "Compendium.lyranthis.LyranthisItems.Item.j2SEt0mgFNN7JvcG";
-    CONFIG.DND5E.weaponIds.kusarigama = "Compendium.lyranthis.LyranthisItems.Item.lrFmQQcgDhnTbuqI";
-    CONFIG.DND5E.weaponIds.yoyo = "Compendium.lyranthis.LyranthisItems.Item.AglB4pvkEkhBd8LX";
     console.log(CONFIG.DND5E);
     delete CONFIG.DND5E.currencies.ep;
 });
 Hooks.once("i18nInit", () => {
     Localize(CONFIG.DND5E.languages.lyranthis);
 });
-/*Hooks.on("ready", function() {
+/*
+Hooks.on("ready", function() {
 });
+*/
+/*
 Hooks.on("dnd5e.preUseActivity", function (activity, usageConfig, dialogConfig, messageConfig) {
     console.log("activity", activity);
     console.log("usageConfig", usageConfig);
     console.log("dialogConfig", dialogConfig);
     console.log("messageConfig", messageConfig);
-})*/
+})
+*/
