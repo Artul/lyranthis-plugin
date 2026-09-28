@@ -1,4 +1,6 @@
 export function initSeraph() {
+    CONFIG.DND5E.restTypes.long.recoverSpellSlotTypes.add("seraph");
+    CONFIG.DND5E.restTypes.short.recoverSpellSlotTypes.add("seraph");
     CONFIG.DND5E.spellcasting.seraph = {
         label: "lyranthis.spell-progression.seraph",
         type: "single",

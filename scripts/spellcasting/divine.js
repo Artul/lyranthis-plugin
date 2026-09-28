@@ -1,4 +1,5 @@
 export function initDivine() {
+    CONFIG.DND5E.restTypes.long.recoverSpellSlotTypes.add("divine");
     CONFIG.DND5E.spellcasting.divine = {
         label: "lyranthis.spell-progression.divine-caster",
         type: "multi",

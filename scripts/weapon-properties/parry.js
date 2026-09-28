@@ -14,6 +14,5 @@ export function initParry() {
         if (parryWeapons.length >= 2) {
             this.attributes.ac.value += 1;
         }
-        console.log(this.attributes.ac.value);
     };
 }
