@@ -14,7 +14,7 @@ Hooks.on("init", function() {
     languages();
     weaponProperties();
     weapons();
-    
+
     delete CONFIG.DND5E.currencies.ep;
 });
 Hooks.once("i18nInit", () => {
